@@ -10,6 +10,7 @@ import Foundation
 
 // UI-independent representation of a facial expression
 
+// MVC 里的 M 
 struct FacialExpression
 {
     enum Eyes: Int {
@@ -26,9 +27,11 @@ struct FacialExpression
         case smile
         
         var sadder: Mouth {
+//            print("Model, line 30: \(rawValue)")
             return Mouth(rawValue: rawValue - 1) ?? .frown
         }
         var happier: Mouth {
+//            print("Model, line 34: \(rawValue)")
             return Mouth(rawValue: rawValue + 1) ?? .smile
         }
     }

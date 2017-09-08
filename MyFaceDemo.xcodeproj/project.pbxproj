@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		8737E6411F5CE71F00D4B5AC /* FacialExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8737E6401F5CE71F00D4B5AC /* FacialExpression.swift */; };
 		87BDF2BA1F4810650058569C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDF2B91F4810650058569C /* AppDelegate.swift */; };
-		87BDF2BC1F4810650058569C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDF2BB1F4810650058569C /* ViewController.swift */; };
+		87BDF2BC1F4810650058569C /* FaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDF2BB1F4810650058569C /* FaceViewController.swift */; };
 		87BDF2BF1F4810650058569C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BDF2BD1F4810650058569C /* Main.storyboard */; };
 		87BDF2C11F4810650058569C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87BDF2C01F4810650058569C /* Assets.xcassets */; };
 		87BDF2C41F4810650058569C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87BDF2C21F4810650058569C /* LaunchScreen.storyboard */; };
 		87BDF2CD1F48175F0058569C /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BDF2CC1F48175F0058569C /* FaceView.swift */; };
+		87DDF1121F61390300621F76 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DDF1111F61390300621F76 /* EmotionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8737E6401F5CE71F00D4B5AC /* FacialExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacialExpression.swift; sourceTree = "<group>"; };
 		87BDF2B61F4810650058569C /* MyFaceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFaceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87BDF2B91F4810650058569C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87BDF2BB1F4810650058569C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87BDF2BB1F4810650058569C /* FaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceViewController.swift; sourceTree = "<group>"; };
 		87BDF2BE1F4810650058569C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87BDF2C01F4810650058569C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87BDF2C31F4810650058569C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87BDF2C51F4810650058569C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87BDF2CC1F48175F0058569C /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		87DDF1111F61390300621F76 /* EmotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				87BDF2CB1F4810840058569C /* Supporting Files */,
-				87BDF2BB1F4810650058569C /* ViewController.swift */,
+				87BDF2BB1F4810650058569C /* FaceViewController.swift */,
 				87BDF2CC1F48175F0058569C /* FaceView.swift */,
 				87BDF2BD1F4810650058569C /* Main.storyboard */,
+				87DDF1111F61390300621F76 /* EmotionsViewController.swift */,
 				8737E6401F5CE71F00D4B5AC /* FacialExpression.swift */,
 			);
 			path = MyFaceDemo;
@@ -152,8 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87BDF2BC1F4810650058569C /* ViewController.swift in Sources */,
+				87BDF2BC1F4810650058569C /* FaceViewController.swift in Sources */,
 				8737E6411F5CE71F00D4B5AC /* FacialExpression.swift in Sources */,
+				87DDF1121F61390300621F76 /* EmotionsViewController.swift in Sources */,
 				87BDF2BA1F4810650058569C /* AppDelegate.swift in Sources */,
 				87BDF2CD1F48175F0058569C /* FaceView.swift in Sources */,
 			);
@@ -228,7 +232,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -278,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -292,11 +296,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QLDM8629MK;
 				INFOPLIST_FILE = MyFaceDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VoiceBeer.MyFaceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -306,11 +312,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QLDM8629MK;
 				INFOPLIST_FILE = MyFaceDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.VoiceBeer.MyFaceDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

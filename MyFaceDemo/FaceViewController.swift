@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FaceViewController: UIViewController {
+class FaceViewController: VCLLoggingViewController {
 
 //    override func viewDidLoad() {
 //        super.viewDidLoad()

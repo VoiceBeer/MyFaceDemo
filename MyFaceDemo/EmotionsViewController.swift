@@ -8,8 +8,13 @@
 
 import UIKit
 
-class EmotionsViewController: VCLLoggingViewController {
+class EmotionsViewController: VCLLoggingViewController, UISplitViewControllerDelegate {
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.splitViewController?.delegate = self
+    }
+    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,4 +35,23 @@ class EmotionsViewController: VCLLoggingViewController {
         "happy": FacialExpression(eyes: .open, mouth: .smile),
         "worried": FacialExpression(eyes: .open, mouth: .smirk)
     ]
+    
+    func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool {
+        if primaryViewController.contents == self {
+            if secondaryViewController.contents is FaceViewController {
+                return true
+            }
+        }
+        return false
+    }
+}
+
+extension UIViewController {
+    var contents: UIViewController {
+        if let navcon = self as? UINavigationController {
+            return navcon.visibleViewController ?? self
+        } else {
+            return self
+        }
+    }
 }
